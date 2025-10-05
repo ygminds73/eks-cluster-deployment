@@ -25,7 +25,7 @@ data "aws_iam_policy_document" "assume_node_role" {
 }
 
 resource "aws_iam_role" "example" {
-  name               = "eks-cluster-example"
+  name               = "eks-cluster-example-2"
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 }
 
