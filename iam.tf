@@ -42,7 +42,7 @@ resource "aws_iam_role_policy_attachment" "example-AmazonEKSVPCResourceControlle
 }
 
 resource "aws_iam_role" "worker" {
-  name               = "eks-node-role"
+  name               = "eks-node-role-2"
   assume_role_policy = data.aws_iam_policy_document.assume_node_role.json
 }
 
